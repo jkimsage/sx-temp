@@ -1,0 +1,52 @@
+// stylelint-disable declaration-no-important, selector-list-comma-newline-after
+
+// Adelle Fonts - italic will be using browser's
+
+@font-face {
+    font-family: 'AdelleSAGE';
+    src: url('#{$font-path}/adellesage-bold-webfont.woff2') format('woff2'), url('#{$font-path}/adellesage-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AdelleSAGE';
+    src: url('#{$font-path}/adellesage-thin-webfont.woff2') format('woff2'), url('#{$font-path}/adellesage-thin-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AdelleSAGE';
+    src: url('#{$font-path}/adellesage-webfont.woff2') format('woff2'), url('#{$font-path}/adellesage-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AdelleSansSAGE';
+    src: url('#{$font-path}/adellesanssage-bold-webfont.woff2') format('woff2'), url('#{$font-path}/adellesanssage-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AdelleSansSAGE';
+    src: url('#{$font-path}/adellesanssage-light-webfont.woff2') format('woff2'), url('#{$font-path}/adellesanssage-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AdelleSansSAGE';
+    src: url('#{$font-path}/adellesanssage-regular-webfont.woff2') format('woff2'), url('#{$font-path}/adellesanssage-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AdelleSansSAGE';
+    src: url('#{$font-path}/adellesanssage-thin-webfont.woff2') format('woff2'), url('#{$font-path}/adellesanssage-thin-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
