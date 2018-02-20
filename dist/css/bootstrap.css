@@ -5703,16 +5703,22 @@ body {
     font-size: 18px; }
 
   h1, .h1 {
-    font-size: 48px; }
+    font-size: 42px; }
 
   h2, .h2 {
-    font-size: 36px; }
+    font-size: 34px; }
 
   h3, .h3 {
     font-size: 28px; }
 
   h4, .h4 {
-    font-size: 24px; } }
+    font-size: 24px; }
+
+  h5, .h5 {
+    font-size: 18px; }
+
+  h6, .h6 {
+    font-size: 14px; } }
 h1, .h1,
 h2, .h2,
 h3, .h3,
@@ -5721,9 +5727,9 @@ h5, .h5,
 h6, .h6 {
   margin-top: 0; }
 
-h5, .h5 {
+h6, .h6 {
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-weight: bold; }
 
 .text-sm {
@@ -5739,13 +5745,16 @@ h5, .h5 {
 
 .btn-link {
   font-weight: bold;
-  color: #ce0058; }
+  color: #ce0058;
+  border-radius: 20px; }
   .btn-link:hover, .btn-link:focus {
-    color: #a40769; }
+    color: #a40769;
+    background-color: rgba(0, 0, 0, 0.04);
+    text-decoration: none; }
   .btn-link.btn-link-light {
     color: #fff; }
     .btn-link.btn-link-light:hover, .btn-link.btn-link-light:focus {
-      color: #ce0058; }
+      color: #92d0ec; }
 
 .btn-light {
   color: #fff;
@@ -5847,16 +5856,14 @@ h5, .h5 {
   background: transparent; }
   .sxd.gcdc-gate .gcdc-form-render > div.gcdc-form-group.gcdc-form-group-error span.gcdc-form-error,
   .sxd.gcdc-gate .gcdc-content-render > div.gcdc-form-group.gcdc-form-group-error span.gcdc-form-error {
-    position: static;
-    color: #d63f40;
-    font-style: italic;
-    font-size: 12px;
-    background: transparent;
-    padding: 8px 0 0;
-    text-align: right; }
+    background: #d63f40;
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 12px 16px;
+    top: -18px; }
     .sxd.gcdc-gate .gcdc-form-render > div.gcdc-form-group.gcdc-form-group-error span.gcdc-form-error::after,
     .sxd.gcdc-gate .gcdc-content-render > div.gcdc-form-group.gcdc-form-group-error span.gcdc-form-error::after {
-      content: none; }
+      border-color: #d63f40 transparent transparent transparent; }
   .sxd.gcdc-gate .gcdc-form-render > div.gcdc-form-group .gcdc-form-button, .sxd.gcdc-gate .gcdc-content-render > div.gcdc-form-group .gcdc-form-button {
     margin-bottom: 0;
     font-weight: bold;
@@ -5947,38 +5954,45 @@ h5, .h5 {
 .sxd.gcdc-gate .gcdc-content-render > div.gcdc-form-group .gcdc-form-field-wrapper input.gcdc-form-field,
 .sxd.gcdc-gate .gcdc-content-render > div.gcdc-form-group .gcdc-form-field-wrapper textarea.gcdc-form-field {
   border-bottom-color: #d6d6d6 !important;
-  border-right-width: 0 !important;
+  border-right-width: 1px !important;
+  border: 1px solid #d6d6d6 !important;
   font-size: 16px;
-  padding: 2px 8px 6px 0;
-  color: rgba(0, 0, 0, 0.85); }
+  padding: 13px 16px;
+  color: rgba(0, 0, 0, 0.85);
+  border-radius: 8px !important; }
 .sxd.gcdc-gate .gcdc-form-render > div.gcdc-form-group label.gcdc-form-label,
 .sxd.gcdc-gate .gcdc-content-render > div.gcdc-form-group label.gcdc-form-label {
+  color: rgba(0, 0, 0, 0.6) !important;
   text-transform: none;
-  padding-left: 0; }
+  padding-left: 16px; }
 .sxd.gcdc-gate .gcdc-form-render > div.gcdc-form-group label.gcdc-form-label span.gcdc-required-asterix,
 .sxd.gcdc-gate .gcdc-content-render > div.gcdc-form-group label.gcdc-form-label span.gcdc-required-asterix {
   position: static;
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(0, 0, 0, 0.6);
   display: inline; }
 .sxd.gcdc-gate .gcdc-form-render > div.gcdc-form-group .gcdc-form-field-wrapper.gcdc-select-wrapper,
 .sxd.gcdc-gate .gcdc-content-render > div.gcdc-form-group .gcdc-form-field-wrapper.gcdc-select-wrapper {
-  border-bottom-color: #d6d6d6 !important;
-  border-right-width: 0 !important;
+  border: 1px solid #d6d6d6 !important;
+  border-radius: 8px !important;
   background-image: none; }
+  .sxd.gcdc-gate .gcdc-form-render > div.gcdc-form-group .gcdc-form-field-wrapper.gcdc-select-wrapper:focus-within,
+  .sxd.gcdc-gate .gcdc-content-render > div.gcdc-form-group .gcdc-form-field-wrapper.gcdc-select-wrapper:focus-within {
+    border: 1px solid #1D7DA8 !important;
+    box-shadow: 0 0 0 2px rgba(29, 125, 168, 0.5), inset 0 0 4px 0 rgba(0, 0, 0, 0.12); }
   .sxd.gcdc-gate .gcdc-form-render > div.gcdc-form-group .gcdc-form-field-wrapper.gcdc-select-wrapper::after,
   .sxd.gcdc-gate .gcdc-content-render > div.gcdc-form-group .gcdc-form-field-wrapper.gcdc-select-wrapper::after {
     content: "";
     position: absolute;
     border: 8px solid transparent;
     border-top-color: #adadad;
-    bottom: 4px;
+    bottom: 12px;
     right: 12px; }
   .sxd.gcdc-gate .gcdc-form-render > div.gcdc-form-group .gcdc-form-field-wrapper.gcdc-select-wrapper select.gcdc-form-field,
   .sxd.gcdc-gate .gcdc-content-render > div.gcdc-form-group .gcdc-form-field-wrapper.gcdc-select-wrapper select.gcdc-form-field {
     font-size: 16px;
-    padding: 2px 8px 6px 0;
+    padding: 13px 16px;
     color: rgba(0, 0, 0, 0.85);
-    height: 33px;
+    height: 52px;
     text-indent: 0; }
 .sxd.gcdc-gate .gcdc-form-render > div.gcdc-form-group.gcdc-form-group-error input.gcdc-form-field,
 .sxd.gcdc-gate .gcdc-form-render > div.gcdc-form-group.gcdc-form-group-error textarea.gcdc-form-field,
@@ -5987,6 +6001,20 @@ h5, .h5 {
 .sxd.gcdc-gate .gcdc-content-render > div.gcdc-form-group.gcdc-form-group-error textarea.gcdc-form-field,
 .sxd.gcdc-gate .gcdc-content-render > div.gcdc-form-group.gcdc-form-group-error .gcdc-form-field-wrapper.gcdc-select-wrapper {
   border-color: #d63f40 !important; }
+.sxd.gcdc-gate .gcdc-form-render > div.gcdc-form-group .gcdc-form-field-wrapper label.gcdc-form-region-flag,
+.sxd.gcdc-gate .gcdc-content-render > div.gcdc-form-group .gcdc-form-field-wrapper label.gcdc-form-region-flag {
+  background-color: transparent; }
+.sxd.gcdc-gate .gcdc-form-render > div.gcdc-form-group input.gcdc-form-field:active, .sxd.gcdc-gate .gcdc-form-render > div.gcdc-form-group input.gcdc-form-field:focus,
+.sxd.gcdc-gate .gcdc-form-render > div.gcdc-form-group textarea.gcdc-form-field:active,
+.sxd.gcdc-gate .gcdc-form-render > div.gcdc-form-group textarea.gcdc-form-field:focus,
+.sxd.gcdc-gate .gcdc-content-render > div.gcdc-form-group input.gcdc-form-field:active,
+.sxd.gcdc-gate .gcdc-content-render > div.gcdc-form-group input.gcdc-form-field:focus,
+.sxd.gcdc-gate .gcdc-content-render > div.gcdc-form-group textarea.gcdc-form-field:active,
+.sxd.gcdc-gate .gcdc-content-render > div.gcdc-form-group textarea.gcdc-form-field:focus {
+  border: 1px solid #1D7DA8 !important;
+  box-shadow: 0 0 0 2px rgba(29, 125, 168, 0.5), inset 0 0 4px 0 rgba(0, 0, 0, 0.12); }
+.sxd.gcdc-gate .gcdc-form-group-checkbox {
+  padding-left: 16px; }
 
 header {
   margin: 0;
